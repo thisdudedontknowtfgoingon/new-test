@@ -19,6 +19,7 @@ public class StringUtils {
         int c = 0;
         for (char ch : s.toCharArray()) {
             if ("aeiou".indexOf(ch) >= 0) c++;
+            if ("AEIOU".indexOf(ch) >= 0) c++;
         }
         return c;
     }
